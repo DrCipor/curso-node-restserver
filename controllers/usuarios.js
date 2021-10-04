@@ -24,7 +24,7 @@ const usuariosGet = async(req = request, res = response) => {
 const usuariosPost = async(req, res = response) => {
 
     
-    const { nombre, correo, password, rol} = req.body // Se recoge todo lo que se envia 
+    const { nombre, correo, password, rol} = req.body 
     const usuario = new Usuario( {nombre, correo, password, rol} )
 
     //Encriptar la contraseña
